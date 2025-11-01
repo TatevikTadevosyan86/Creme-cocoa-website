@@ -582,7 +582,6 @@ nav ul li:hover ul.submenu {
   font-size: 2rem;
   color: var(--cocoa);
   margin-bottom: 1rem;
-
 }
 
 .menu-content p {
@@ -793,18 +792,15 @@ nav ul li:hover ul.submenu {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    /* allow multiple rows */
     gap: 0.5rem;
     padding: 0;
     margin: 0;
     list-style: none;
     justify-content: center;
-    /* center buttons */
   }
 
   .menu-sidebar ul li {
     margin: 0;
-    /* remove default block spacing */
   }
 
   .menu img {
@@ -820,6 +816,11 @@ nav ul li:hover ul.submenu {
     height: 180px;
   }
 
+  .menu-content h2,
+  .menu-content h3{
+    text-align: center;
+  }
+
   .site-footer {
     padding: 20px 10px;
     font-size: 0.85rem;
@@ -829,6 +830,9 @@ nav ul li:hover ul.submenu {
     display: inline-block;
     margin-top: 8px;
     width: auto;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
   }
 
   .footer-right h3 {
