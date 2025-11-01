@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crème & Cocoa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo-main.png" alt="Crème & Cocoa Logo"></a>
+        </div>
+        <!-- Checkbox to control menu toggle -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="menu.html">Menu</a>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="hero-wrapper">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/hero-image-small.png">
+                    <source media="(max-width: 1024px)" srcset="images/hero-image-medium.png">
+                    <img src="images/hero-image-large.png" alt="Café interior with cozy atmosphere" loading="lazy">
+                </picture>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Welcome to Crème & Cocoa</h1>
+                        <p>Experience our exotic flavors and unique treats that cater to adventurous eaters.
+                            <a href="about.html">Read more</a>
+                        </p>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#book" class="btn">Book a table</a>
+                        <a href="#contact" class="btn">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu-intro">
+            <div class="text">
+                <h2>Our Menu</h2>
+                <p>Discover our freshly baked pastries and aromatic coffee blends.</p>
+                <a href="menu.html" class="btn">Show menu</a>
+
+            </div>
+            <video poster="images/pancakes.jpg" autoplay muted loop class="hero-video">
+                <source src="videos/pancake.mp4" type="video/mp4">
+                <source src="videos/pancake.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="book" class="book-table">
+            <img src="/images/table1.jpg" alt="table">
+            <div>
+                <h2>Book a table</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+                    <button type="submit" class="btn">Book Now</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="offers">
+            <div class="text">
+                <h2>Special offers</h2>
+                <p>Enjoy our seasonal specials and exclusive deals available for a limited time only!</p>
+                <a href="menu/offers.html" class="btn">View Offers</a>
+            </div>
+            <img src="images/lemon-cake.jpg" alt="Special Offer">
+
+        </section>
+
+        <section id="contact" class="contact-us">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1210.0881297745632!2d18.02129146619249!3d59.33099141137803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77d50ced3b15%3A0x35a7d864b013604d!2zTGlsbGEgVsOkc3RlcmJyb24gMTAsIDExMiAxOSBTdG9ja2hvbG0sINCo0LLQtdGG0LjRjw!5e0!3m2!1sru!2sam!4v1761939606836!5m2!1sru!2sam" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-info">
+                <h2>Find Us</h2>
+                <p>We are located in the heart of the city – welcome in!</p>
+                <ul>
+                    <li><strong>Address:</strong> Lilla Västerbron 10, Stockholm</li>
+                    <li><strong>Phone:</strong> <a href="tel:+46701234567">+46 70 123 45 67</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:info@cremeandcocoa.se">info@cremeandcocoa.se</a></li>
+                    <li><strong>Opening Hours:</strong> Mon-Fri 08:00–20:00, Sat-Sun 09:00–18:00</li>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>&copy; 2025 Crème & Cocoa</p>
+            </div>
+            <div class="footer-center">
+                <a href="rapport.html" class="rapport-btn">View Rapport</a>
+            </div>
+
+            <div class="footer-right">
+                <h3>Follow us</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank" aria-label="Facebook">
+                        <img src="images/FB.png" alt="Facebook" width="24" height="24">
+                    </a>
+                    <a href="#" target="_blank" aria-label="Instagram">
+                        <img src="images/instagram.png" alt="Instagram" width="24" height="24">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

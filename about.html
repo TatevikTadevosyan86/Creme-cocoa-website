@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crème & Cocoa | About Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo-main.png" alt="Crème & Cocoa Logo"></a>
+        </div>
+        <!-- Checkbox to control menu toggle -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="menu.html">Menu</a>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="about-section">
+            <picture>
+                <source srcset="images/baker-medium.png" media="(max-width: 1024px)">
+                <source srcset="images/baker-small.png" media="(max-width: 600px)">
+                <img src="images/baker.jpg" alt="café front" loading="lazy">
+            </picture>
+            <div class="about">
+                <h2>About Us</h2>
+                <p>
+                    Welcome to <strong>Crème & Cocoa</strong> — a cozy café born out of a passion for coffee, creativity, and community.
+                    Our story began with a simple dream: to create a space where people can enjoy handcrafted coffee, delicious pastries,
+                    and heartfelt conversations in a warm, inviting atmosphere.
+                </p>
+                <p>
+                    Every detail in our café — from the rustic wood tables to the aroma of freshly baked croissants —
+                    is inspired by our love for both tradition and innovation. We believe coffee is more than just a drink;
+                    it’s a way to connect, to slow down, and to savor the moment.
+                </p>
+                <p>
+                    Whether you’re here for your morning latte, a sweet treat, or an afternoon of inspiration,
+                    we’re happy to have you as part of our story.
+                </p>
+                <a href="menu.html" class="btn">See Our Menu</a>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>&copy; 2025 Crème & Cocoa</p>
+            </div>
+            <div class="footer-center">
+                <a href="rapport.html" class="rapport-btn">View Rapport</a>
+            </div>
+            <div class="footer-right">
+                <h3>Follow us</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank" aria-label="Facebook">
+                        <img src="images/FB.png" alt="Facebook" width="24" height="24">
+                    </a>
+                    <a href="#" target="_blank" aria-label="Instagram">
+                        <img src="images/instagram.png" alt="Instagram" width="24" height="24">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
