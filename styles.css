@@ -306,8 +306,7 @@ nav ul li:hover ul.submenu {
 .menu-intro img,
 .book-table img,
 .contact-us img,
-.offers img,
-.hero-video {
+.offers img{
   width: 45%;
   max-width: 560px;
   height: auto;
@@ -742,11 +741,12 @@ nav ul li:hover ul.submenu {
     font-size: 0.9rem;
   }
 
-
+ 
   .hero-video {
     height: auto;
     max-height: 300px;
-  }
+    object-fit: cover;
+  } 
 
   .menu-intro,
   .book-table,
