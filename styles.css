@@ -963,3 +963,30 @@ nav ul li:hover ul.submenu {
     gap: 10px;
   }
 }
+/* iPad landscape & small desktop (901px–1200px) */
+@media (min-width: 901px) and (max-width: 1200px) {
+  /* Keep a consistent vertical stack for these sections */
+  .menu-intro,
+  .book-table,
+  .offers,
+  .contact-us {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    margin: 4rem 2rem;
+    text-align: center;
+  }
+
+  .menu-intro img,
+  .book-table img,
+  .offers img,
+  .contact-us img {
+    width: 80%;
+    max-width: 600px;
+  }
+
+  .book-table form {
+    width: 80%;
+    max-width: 550px;
+  }
+}
